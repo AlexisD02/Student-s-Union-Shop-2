@@ -104,9 +104,9 @@ The page is displaying a list of orders placed by the logged-in user. The PHP co
 
 - **Neatly Structured Code:**  The code is organized and structured in a clean and maintainable manner.
 
--**Calculated product reviews**: reviews are calacluated, averaged and displayed, providing users an overall rating for a product.
+- **Calculated product reviews**: reviews are calacluated, averaged and displayed, providing users an overall rating for a product.
 
--**Product information page**: the web application has been modified from assessment 1, removing the sessionStorage HTML5 API to use PHP GET/POST variables to access page information. This is used when a user clicks an item to reveal more information, the PHP should retrieve the data from the database and present on an item.php page
+- **Product information page**: the web application has been modified from assessment 1, removing the sessionStorage HTML5 API to use PHP GET/POST variables to access page information. This is used when a user clicks an item to reveal more information, the PHP should retrieve the data from the database and present on an item.php page
 
 - **Submit/Present reviews**: logged in users are be presented with an option to leave a review. A review includes a title, description and rating. Reviews are presented for each product item (tbl_reviews) even if the user is not logged in. 
 
