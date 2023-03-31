@@ -114,7 +114,7 @@ The page is displaying a list of orders placed by the logged-in user. The PHP co
 
 - **Dynamic content is responsive**: all information/data retrieved from the database is presented accordingly to the responsive application (i.e., content is presented according to the design).
 
-- **Advanced products search**: searching for products is achieved through more advanced searches such as a combination of text (the application should retrieve a list of products matching the search criteria).//
+- **Advanced products search**: searching for products is achieved through more advanced searches such as a combination of text (the application should retrieve a list of products matching the search criteria). The advanced product search input on the page works by taking the user's input and using it to build a query that searches for products in the website's database. The search input uses a PHP function to build a query that searches for products containing the user's search terms in either the title or description fields. The search terms are first split into individual words, and then the function builds a query that searches for products containing all of the words in either the title or description fields.
 
 - **Checkout mechanism**: logged in users can checkout in their cart, which adds the order to the orders table (tbl_orders) in the MySQL database. Upon insertion, the user is presented with a success message informing their order that it has been placed successfully, and then all items are removed from the cart.
 
