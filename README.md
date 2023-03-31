@@ -17,7 +17,7 @@ This is the work for assignment 2 for CO1418 Web Technologies
 
 **Project URL:**  [https://vesta.uclan.ac.uk/~ademetriou5/Demetriou-Alexis\_G20970098\_assignment-two/](https://vesta.uclan.ac.uk/~ademetriou5/Demetriou-Alexis_G20970098_assignment-two/)
 
-**GitHub Repository URL:**  [https://github.com/username/shopping-cart](https://github.com/username/shopping-cart)
+**GitHub Repository URL:**  [https://github.com/AlexisD02/Student-s-Union-Shop-2](https://github.com/AlexisD02/Student-s-Union-Shop-2)
 
 **Example Login Account:**
 
