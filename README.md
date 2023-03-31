@@ -84,50 +84,49 @@ The page has a PHP script that handles placing an order for a user in an online 
 
 The page is displaying a list of orders placed by the logged-in user. The PHP code checks if the user is logged in and, if not, prompts them to log in to view their orders. If the user is logged in, the code connects to the MySQL database, fetches the order details for the logged-in user, and displays them in a table format with each row containing the order date and the products in the order.
 
-**Features and Decisions**
+**Features**
+
+-**Provides login functionality**: the application provides the ability to allow users to login to complete the checkout process of the shopping cart. Only logged in users should be able to checkout their shopping cart
+
+-**Provides live offers**: live offers (tbl_offers) are retrieved from the database and presented on the homepage to all users (users don't have to be logged in to see these)
+
+-**Product items are stored in the database**: items are no longer hardcoded in the HTML but rather retrieved from the database (allowing more items to be added)
+
+-**Uses sessions to detect logged in users**: sessions are used to identify when a user is logged in, if a user is logged in the application should provide the ability to checkout the shopping cart. Otherwise the application should redirect users to sign up / sign in
+
+-**Basic browse product view**: basic browsing functionality if provided to browse products (such as a dropdown, checkboxes or buttons) this should bring back products that related to a particular category (e.g., if you select jumpers it should only show jumpers in the product list)
+
+-**Provides a personalised greeting**: once logged in, the application should welcome the user in the shopping card by name
+
+-**Custom 404 error page**: a custom 404 error page should be provided when a URL is accessed that does not exist 
+
+-**User registration**: the application allows the functionality to sign up new users
+
+- **Neatly Structured Code:**  The code is organized and structured in a clean and maintainable manner.
+
+-**Calculated product reviews**: reviews are calacluated, averaged and displayed, providing users an overall rating for a product.
+
+-**Product information page**: the web application has been modified from assessment 1, removing the sessionStorage HTML5 API to use PHP GET/POST variables to access page information. This is used when a user clicks an item to reveal more information, the PHP should retrieve the data from the database and present on an item.php page
+
+-**Submit/Present reviews**: logged in users are be presented with an option to leave a review. A review includes a title, description and rating. Reviews are presented for each product item (tbl_reviews) even if the user is not logged in. 
+
+-**Secure passwords**: passwords should be stored using bcrypt hashing and salting and not raw text
+
+-**Dynamic content is responsive**: all information/data retrieved from the database is presented accordingly to the responsive application (i.e., content is presented according to the design)
+
+-**Advanced products search**: searching for products is achieved through more advanced searches such as a combination of text (the application should retrieve a list of products matching the search criteria). You will need to think about how you search the MySQL database for strings (Hint! you should look at the LIKE and wildcard operators in MySQL commands)
+
+-**Checkout mechanism**: logged in users can checkout their shopping cart which adds the order to the orders table (tbl_orders) in the MySQL database. Upon insertion a success message should be presented to the user informing their order is now being processed and all items from the shopping cart should be removed
 
 - **Login Functionality:** the application provides the ability to allow users to login to complete the checkout process of the shopping cart. Only logged in users should be able to checkout their shopping cart
 
 - **Sign Up Functionality** : The application provides a user-friendly sign-up functionality that allows new users to create an account. The sign-up process includes input validation, password strength checks, and email verification to ensure a secure and smooth registration experience. Users can then log in with their newly created accounts to access the shopping cart and other features.
 
-- **Live Offers:**  The website displays live offers and discounts on various products.
-
-- **Product Items in Database:**  All product items are stored in a database, making it easy to manage and update the inventory.  
-
-- **Session Management:**  The application uses sessions to detect logged-in users and provide a personalized experience.
-
-- **Basic Browse Product View:**  Users can browse through the available products and view their details.
-
-- **Personalized Greeting:**  The website displays a personalized greeting for logged-in users.
-
-- **Custom 404 Error Page:**  A custom 404 error page is displayed when a user tries to access a non-existent page.
-
-- **Neatly Structured Code:**  The code is organized and structured in a clean and maintainable manner.
-
-- **User Registration:**  New users can register for an account to access the shopping cart features.
-
-- **Calculated Product Reviews:**  Users can submit reviews for products, and the average rating is calculated and displayed.
-
-- **Product Information Page:**  Each product has a dedicated information page with detailed specifications and user reviews.
-
-- **Submit/Present Reviews:**  Users can submit reviews for products and view other users' reviews.
-
-- **Secure Passwords:**  Passwords are stored securely using hashing and salting techniques.
-
 - **Responsive Dynamic Content:**  The website's dynamic content is responsive and adapts to different screen sizes and devices.
-
-- **Advanced Product Search:**  Users can search for products using advanced filters and sorting options.
-
-- **Checkout Mechanism:**  The shopping cart provides a smooth and secure checkout process for users to complete their orders.
 
 - **Professional Looking and Functional Web Application:**  The website has a professional look and feel, providing a pleasant user experience.
 
 - **User Order List View** : The application provides a dedicated order list view for logged-in users, allowing them to easily track their past and current orders. This feature includes information about each order, such as order date and items purchased.
 
-**Additional Notes**
-
-- The website is built using HTML, CSS, JavaScript, and PHP.
-- The database is managed using MySQL.
-- The project follows best practices for security, performance, and maintainability.
-- The website is tested on various browsers and devices to ensure compatibility and responsiveness.
-- The project is hosted on a reliable and secure web server.
+______________________________________
+Copyright (c) 2022-23 Alexis Demetriou
