@@ -86,9 +86,9 @@ The page is displaying a list of orders placed by the logged-in user. The PHP co
 
 **Features**
 
--**Provides login functionality**: the application provides the ability to allow users to login to complete the checkout process of the shopping cart. Only logged in users should be able to checkout their shopping cart
+- **Provides login functionality**: the application provides the ability to allow users to login to complete the checkout process of the shopping cart. Only logged in users should be able to checkout their shopping cart
 
--**Provides live offers**: live offers (tbl_offers) are retrieved from the database and presented on the homepage to all users (users don't have to be logged in to see these)
+- **Provides live offers**: live offers (tbl_offers) are retrieved from the database and presented on the homepage to all users (users don't have to be logged in to see these)
 
 - **Product items are stored in the database**: items are no longer hardcoded in the HTML but rather retrieved from the database (allowing more items to be added)
 
