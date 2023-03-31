@@ -90,17 +90,17 @@ The page is displaying a list of orders placed by the logged-in user. The PHP co
 
 -**Provides live offers**: live offers (tbl_offers) are retrieved from the database and presented on the homepage to all users (users don't have to be logged in to see these)
 
--**Product items are stored in the database**: items are no longer hardcoded in the HTML but rather retrieved from the database (allowing more items to be added)
+- **Product items are stored in the database**: items are no longer hardcoded in the HTML but rather retrieved from the database (allowing more items to be added)
 
--**Uses sessions to detect logged in users**: sessions are used to identify when a user is logged in, if a user is logged in the application should provide the ability to checkout the shopping cart. Otherwise the application should redirect users to sign up / sign in
+- **Uses sessions to detect logged in users**: sessions are used to identify when a user is logged in, if a user is logged in the application should provide the ability to checkout the shopping cart. Otherwise the application should redirect users to sign up / sign in
 
--**Basic browse product view**: basic browsing functionality if provided to browse products (such as a dropdown, checkboxes or buttons) this should bring back products that related to a particular category (e.g., if you select jumpers it should only show jumpers in the product list)
+- **Basic browse product view**: basic browsing functionality if provided to browse products (such as a dropdown, checkboxes or buttons) this should bring back products that related to a particular category (e.g., if you select jumpers it should only show jumpers in the product list)
 
--**Provides a personalised greeting**: once logged in, the application should welcome the user in the shopping card by name
+- **Provides a personalised greeting**: once logged in, the application should welcome the user in the shopping card by name
 
--**Custom 404 error page**: a custom 404 error page should be provided when a URL is accessed that does not exist 
+- **Custom 404 error page**: a custom 404 error page should be provided when a URL is accessed that does not exist 
 
--**User registration**: the application allows the functionality to sign up new users
+- **User registration**: the application allows the functionality to sign up new users
 
 - **Neatly Structured Code:**  The code is organized and structured in a clean and maintainable manner.
 
@@ -108,15 +108,15 @@ The page is displaying a list of orders placed by the logged-in user. The PHP co
 
 -**Product information page**: the web application has been modified from assessment 1, removing the sessionStorage HTML5 API to use PHP GET/POST variables to access page information. This is used when a user clicks an item to reveal more information, the PHP should retrieve the data from the database and present on an item.php page
 
--**Submit/Present reviews**: logged in users are be presented with an option to leave a review. A review includes a title, description and rating. Reviews are presented for each product item (tbl_reviews) even if the user is not logged in. 
+- **Submit/Present reviews**: logged in users are be presented with an option to leave a review. A review includes a title, description and rating. Reviews are presented for each product item (tbl_reviews) even if the user is not logged in. 
 
--**Secure passwords**: passwords should be stored using bcrypt hashing and salting and not raw text
+- **Secure passwords**: passwords should be stored using bcrypt hashing and salting and not raw text
 
--**Dynamic content is responsive**: all information/data retrieved from the database is presented accordingly to the responsive application (i.e., content is presented according to the design)
+- **Dynamic content is responsive**: all information/data retrieved from the database is presented accordingly to the responsive application (i.e., content is presented according to the design)
 
--**Advanced products search**: searching for products is achieved through more advanced searches such as a combination of text (the application should retrieve a list of products matching the search criteria). You will need to think about how you search the MySQL database for strings (Hint! you should look at the LIKE and wildcard operators in MySQL commands)
+- **Advanced products search**: searching for products is achieved through more advanced searches such as a combination of text (the application should retrieve a list of products matching the search criteria). You will need to think about how you search the MySQL database for strings (Hint! you should look at the LIKE and wildcard operators in MySQL commands)
 
--**Checkout mechanism**: logged in users can checkout their shopping cart which adds the order to the orders table (tbl_orders) in the MySQL database. Upon insertion a success message should be presented to the user informing their order is now being processed and all items from the shopping cart should be removed
+- **Checkout mechanism**: logged in users can checkout their shopping cart which adds the order to the orders table (tbl_orders) in the MySQL database. Upon insertion a success message should be presented to the user informing their order is now being processed and all items from the shopping cart should be removed
 
 - **Login Functionality:** the application provides the ability to allow users to login to complete the checkout process of the shopping cart. Only logged in users should be able to checkout their shopping cart
 
